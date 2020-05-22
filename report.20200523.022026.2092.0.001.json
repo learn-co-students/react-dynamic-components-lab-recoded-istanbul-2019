@@ -1,0 +1,393 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200523.022026.2092.0.001.json",
+    "dumpEventTime": "2020-05-23T02:20:26Z",
+    "dumpEventTimeStamp": "1590189626863",
+    "processId": 2092,
+    "threadId": null,
+    "cwd": "/home/samah/code/labs/react-dynamic-components-lab-recoded-istanbul-2019",
+    "commandLine": [
+      "/home/samah/.nvm/versions/node/v13.11.0/bin/node",
+      "/home/samah/code/labs/react-dynamic-components-lab-recoded-istanbul-2019/node_modules/mocha/bin/_mocha",
+      "--timeout",
+      "10000",
+      "--compilers",
+      "js:babel-register",
+      "-R",
+      "mocha-multi",
+      "--reporter-options",
+      "spec=-,json=.results.json"
+    ],
+    "nodejsVersion": "v13.11.0",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "13.11.0",
+      "v8": "7.9.317.25-node.29",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "6",
+      "llhttp": "2.0.4",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.11.0/node-v13.11.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.11.0/node-v13.11.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.4.0-17763-Microsoft",
+    "osVersion": "#55-Microsoft Sat Oct 06 18:05:00 PST 2018",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz",
+        "speed": 2401,
+        "user": 5690400,
+        "nice": 0,
+        "sys": 5979800,
+        "idle": 8028900,
+        "irq": 311200
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz",
+        "speed": 2401,
+        "user": 5720300,
+        "nice": 0,
+        "sys": 4127900,
+        "idle": 9850900,
+        "irq": 58500
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz",
+        "speed": 2401,
+        "user": 6269000,
+        "nice": 0,
+        "sys": 5166500,
+        "idle": 8263500,
+        "irq": 56200
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz",
+        "speed": 2401,
+        "user": 5849300,
+        "nice": 0,
+        "sys": 4395600,
+        "idle": 9454200,
+        "irq": 48200
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wifi0",
+        "internal": false,
+        "mac": "34:e6:ad:29:f9:c8",
+        "address": "192.168.1.22",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wifi0",
+        "internal": false,
+        "mac": "34:e6:ad:29:f9:c8",
+        "address": "fe80::2cba:a4ce:1168:aa0e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 15
+      }
+    ],
+    "host": "DESKTOP-OT36FRI"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b4ea05",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/home/samah/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000a10baf",
+      "symbol": "node::OnFatalError(char const*, char const*) [/home/samah/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b859ce",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/home/samah/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b85d49",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/home/samah/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d34255",
+      "symbol": " [/home/samah/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d348e6",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/home/samah/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d43159",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/home/samah/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d43f95",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/home/samah/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d46a6c",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/home/samah/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d0d644",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/home/samah/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x000000000105aa9c",
+      "symbol": "v8::internal::Runtime_AllocateInOldGeneration(int, unsigned long*, v8::internal::Isolate*) [/home/samah/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x00000000013de0d9",
+      "symbol": " [/home/samah/.nvm/versions/node/v13.11.0/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2152726528,
+    "totalCommittedMemory": 2150825672,
+    "usedMemory": 2146331864,
+    "availableMemory": 47440464,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 921104,
+        "capacity": 1047424,
+        "used": 198320,
+        "available": 849104
+      },
+      "old_space": {
+        "memorySize": 2095460352,
+        "committedMemory": 2095188392,
+        "capacity": 2092932032,
+        "used": 2092476864,
+        "available": 455168
+      },
+      "code_space": {
+        "memorySize": 692224,
+        "committedMemory": 626368,
+        "capacity": 425248,
+        "used": 425248,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2101248,
+        "committedMemory": 1943072,
+        "capacity": 1164960,
+        "used": 1164960,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 52064256,
+        "committedMemory": 52064256,
+        "capacity": 52030648,
+        "used": 52030648,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047424,
+        "used": 0,
+        "available": 1047424
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 121.344,
+    "kernelCpuSeconds": 15.5312,
+    "cpuConsumptionPercent": 177.76,
+    "maxRss": 2260328448,
+    "pageFaults": {
+      "IORequired": 0,
+      "IONotRequired": 668332
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 51.9062,
+    "kernelCpuSeconds": 6.875,
+    "cpuConsumptionPercent": 76.3393,
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "NVM_DIR": "/home/samah/.nvm",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "HOSTTYPE": "x86_64",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "LANG": "C.UTF-8",
+    "rvm_bin_path": "/home/samah/.rvm/bin",
+    "AMD_ENTRYPOINT": "vs/server/remoteExtensionHostProcess",
+    "rvm_version": "1.29.9 (latest)",
+    "RUBY_VERSION": "ruby-2.6.1",
+    "COLORTERM": "truecolor",
+    "NVM_CD_FLAGS": "",
+    "GEM_HOME": "/home/samah/.rvm/gems/ruby-2.6.1",
+    "DOTNET_ROOT": "/home/samah/.vscode-server/data/User/globalStorage/ms-vsliveshare.vsliveshare/dotnet-3.1.1",
+    "S_COLORS": "auto",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "VSLS_SESSION_KEEPALIVE_INTERVAL": "20",
+    "USER": "samah",
+    "PWD": "/home/samah/code/labs/react-dynamic-components-lab-recoded-istanbul-2019",
+    "HOME": "/home/samah",
+    "VSCODE_GIT_ASKPASS_NODE": "/home/samah/.vscode-server/bin/5763d909d5f12fe19f215cbfdd29a91c0fa9208a/node",
+    "rvm_user_install_flag": "1",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.45.1",
+    "NAME": "DESKTOP-OT36FRI",
+    "XDG_DATA_DIRS": "/usr/local/share:/usr/share:/var/lib/snapd/desktop",
+    "GEM_PATH": "/home/samah/.rvm/gems/ruby-2.6.1:/home/samah/.rvm/gems/ruby-2.6.1@global",
+    "VSCODE_IPC_HOOK_CLI": "/tmp/vscode-ipc-925f6fde-d264-4183-bf81-fdfcfbeb7d3f.sock",
+    "rvm_stored_umask": "0000",
+    "rvm_loaded_flag": "1",
+    "rvm_path": "/home/samah/.rvm",
+    "VSCODE_GIT_ASKPASS_MAIN": "/home/samah/.vscode-server/bin/5763d909d5f12fe19f215cbfdd29a91c0fa9208a/extensions/git/dist/askpass-main.js",
+    "SHELL": "/bin/bash",
+    "TERM": "xterm-256color",
+    "NVM_BIN": "/home/samah/.nvm/versions/node/v13.11.0/bin",
+    "rvm_prefix": "/home/samah",
+    "SHLVL": "3",
+    "VSCODE_GIT_IPC_HANDLE": "/tmp/vscode-git-2bd7371f77.sock",
+    "PIPE_LOGGING": "true",
+    "LOGNAME": "samah",
+    "GIT_ASKPASS": "/home/samah/.vscode-server/bin/5763d909d5f12fe19f215cbfdd29a91c0fa9208a/extensions/git/dist/askpass.sh",
+    "MY_RUBY_HOME": "/home/samah/.rvm/rubies/ruby-2.6.1",
+    "PATH": "/home/samah/.vscode-server/bin/5763d909d5f12fe19f215cbfdd29a91c0fa9208a/bin:/home/samah/.rvm/gems/ruby-2.6.1/bin:/home/samah/.rvm/gems/ruby-2.6.1@global/bin:/home/samah/.rvm/rubies/ruby-2.6.1/bin:/home/samah/.nvm/versions/node/v13.11.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_1804.2020.5.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/QuickTime/QTSystem:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Brackets/command:/mnt/c/Users/Dell/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Dell/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Dell/AppData/Local/atom/bin:/snap/bin:/home/samah/.rvm/bin:/home/samah/.rvm/bin:/home/samah/.rvm/bin",
+    "IRBRC": "/home/samah/.rvm/rubies/ruby-2.6.1/.irbrc",
+    "WSLENV": "VSCODE_WSL_EXT_LOCATION/up:ELECTRON_RUN_AS_NODE/w:",
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "VERBOSE_LOGGING": "true",
+    "_": "/home/samah/.rvm/gems/ruby-2.6.1/bin/learn",
+    "BUNDLER_ORIG_BUNDLE_BIN_PATH": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_BUNDLE_GEMFILE": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_BUNDLER_VERSION": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_GEM_HOME": "/home/samah/.rvm/gems/ruby-2.6.1",
+    "BUNDLER_ORIG_GEM_PATH": "/home/samah/.rvm/gems/ruby-2.6.1:/home/samah/.rvm/gems/ruby-2.6.1@global",
+    "BUNDLER_ORIG_MANPATH": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_PATH": "/home/samah/.vscode-server/bin/5763d909d5f12fe19f215cbfdd29a91c0fa9208a/bin:/home/samah/.rvm/gems/ruby-2.6.1/bin:/home/samah/.rvm/gems/ruby-2.6.1@global/bin:/home/samah/.rvm/rubies/ruby-2.6.1/bin:/home/samah/.nvm/versions/node/v13.11.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_1804.2020.5.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/QuickTime/QTSystem:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Brackets/command:/mnt/c/Users/Dell/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Dell/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Dell/AppData/Local/atom/bin:/snap/bin:/home/samah/.rvm/bin:/home/samah/.rvm/bin:/home/samah/.rvm/bin",
+    "BUNDLER_ORIG_RB_USER_INSTALL": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_RUBYLIB": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_RUBYOPT": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "LOADED_MOCHA_OPTS": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 8388608
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 7823,
+      "hard": 7823
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
